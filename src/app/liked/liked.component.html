@@ -1,0 +1,9 @@
+<mat-spinner *ngIf="loading; else notLoading"></mat-spinner>
+<ng-template #notLoading>
+    <div class="conatiner d-flex flex-wrap justify-content-center mx-auto px-2 my-5">
+        <div class="art-cards px-2 py-2" *ngFor="let elem of favorites">
+            <app-card [artist_title]="elem.artist_title" [image_id]='elem.image_id' [title]="elem.title"
+                [id]="elem.id"></app-card>
+        </div>
+    </div>
+</ng-template>

@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="https://www.artic.edu/iiif/2/{{image_id}}/full/200,250/0/default.jpg"
+        alt="Card image cap">
+    <div class="card-body">
+        <div class="art-desc mb-4">
+            <h5 class="card-title">{{title}}</h5>
+            <p class="card-text">{{artist_title}}</p>
+        </div>
+        <div class="actions d-flex justify-content-center align-items-center">
+            <a [routerLink]="['/view', id]" type="button" class="btn btn-primary">View</a>
+            <mat-icon type="button" (click)="addToFavorites(id)">
+                {{isFavorite ? 'favorite' : 'favorite_border'}}
+            </mat-icon>
+        </div>
+    </div>
+</div>

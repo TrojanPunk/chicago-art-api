@@ -1,0 +1,32 @@
+<div class="page d-flex flex-column align-items-center">
+
+    <form class="form-controls px-4 mt-5" [formGroup]="searchForm">
+        <div class="form-container d-flex justify-content-center">
+            <input class="input" type="text" placeholder="Search art..." formControlName="title">
+            <button class="btn btn-primary" type="submit" (click)="logForm()"><mat-icon>search</mat-icon></button>
+        </div>
+    </form>
+
+    <mat-spinner *ngIf="loading; else notLoading"></mat-spinner>
+    <ng-template #notLoading>
+        <div class="conatiner d-flex flex-wrap justify-content-center mx-auto px-2 my-5">
+            <div class="art-cards px-2 py-2" *ngFor="let elem of displayedArt">
+                <app-card [artist_title]="elem.artist_title" [image_id]='elem.image_id'
+                    [title]="elem.title" [id]="elem.id"></app-card>
+            </div>
+        </div>
+    </ng-template>
+
+    <nav aria-label="...">
+        <ul class="pagination">
+            <li [ngClass]="currentPage > 1 ? 'page-item' : 'page-item disabled'">
+                <a class="control" type="button" class="page-link" (click)="previousPage()"><mat-icon>keyboard_arrow_left</mat-icon></a>
+            </li>
+            <li class="page-item"><a class="page-link">{{currentPage}}</a></li>
+            <li [ngClass]="currentPage < 120 ? 'page-item' : 'page-item disabled'">
+                <a class="control" type="button" class="page-link" (click)="nextPage()"><mat-icon>keyboard_arrow_right</mat-icon></a>
+            </li>
+        </ul>
+    </nav>
+    
+</div>

@@ -1,0 +1,78 @@
+/* .carousel {
+    position: relative;
+}
+
+.carousel-item {
+    height: 100%;
+    object-fit: cover;
+}
+
+.c-carousel-inner {
+    height: 90vh;
+    object-fit: cover;
+}
+
+.carousel-image {
+    background: rgb(0, 0, 0, 0.3);
+}
+
+.slide-title {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 0px;
+}
+
+.slide-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.text-container {
+    gap: 10px;
+    margin-bottom: 15%;
+}
+
+
+.btn.btn-primary {
+    position: absolute;
+    padding: 1% 10px;
+    background: #cb202d;
+    border: none;
+    font-size: 12px;
+    width: 100px;
+    bottom: 15%;
+  } */
+
+.carousel, .carousel-inner, .carousel-item {
+    height: 100vh;
+}
+
+.carousel-item {
+    object-fit: fill;
+}
+
+.title {
+    font-size: 72px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    opacity: 0.5;
+    color: red;
+}
+
+.carousel-item {
+    background: black;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #818181;
+}
+
+.btn {
+    background: #cb202d;
+    border: none;
+    font-size: 12px;
+    width: 5rem;
+    padding: 0.5rem;
+}

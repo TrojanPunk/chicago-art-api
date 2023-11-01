@@ -1,0 +1,14 @@
+<div class="indi-container d-flex justify-content-start mx-5 mt-5">
+    <div class="indi-img-container">
+        <img src="https://www.artic.edu/iiif/2/{{oneArtData.data.image_id}}/full/300,400/0/default.jpg" class="indi-img"
+            alt="...">
+    </div>
+    <div class="indi-text d-flex flex-column ms-4">
+        <h2 class="title font-weight-bold">{{oneArtData.data.title}}</h2>
+        <p class="artist mb-3">{{oneArtData.data.artist_title}}</p>
+        <p class="date mb-3">{{oneArtData.data.date_display}}</p>
+        <p class="desc mb-4">{{oneArtData.data.description}}</p>
+        <button class="favorite btn btn-outline-primary"
+            data-product-id="${lastItem.id}"><mat-icon>favorite</mat-icon></button>
+    </div>
+</div>

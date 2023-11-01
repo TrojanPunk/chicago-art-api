@@ -1,0 +1,33 @@
+.indi-text {
+    width: 50%;
+}
+
+.indi-section-container {
+    gap: 20px;
+}
+
+.date {
+    font-weight: 500;
+}
+
+.artist {
+    font-style: italic;
+    color: #535353;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: #cb202d;
+}
+
+.btn {
+    color: #cb202d;
+    border-color: #cb202d;
+    width: 5rem;
+}
+
+.btn:hover {
+    background: #cb202d;
+    color: white;
+}
